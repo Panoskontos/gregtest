@@ -5,7 +5,12 @@ import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
 import FolderDeleteIcon from '@mui/icons-material/FolderDelete';
 import FolderCopyIcon from '@mui/icons-material/FolderCopy';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import BorderColorIcon from '@mui/icons-material/BorderColor';
+import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 function App() {
   return (
@@ -121,23 +126,69 @@ function App() {
     </tr> */}
   </thead>
   <tbody>
-    <tr>
+    <tr className='myrow'>
       <td>
         <div className='firstcol'>
-        <div><FolderIcon sx={{color:'gray'}}/></div>
+        <div><FolderIcon sx={{color:'#5f6269'}}/></div>
         <div style={{marginLeft:20, fontSize:14}}>2018_02_26_ID_Renderings_Portfolio</div>
         </div></td>
       <td>
         <div className='seccolumn'>
-        <div>icon</div>
-        <div>me</div>
+        <div class="avatar">
+  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar"/>
+</div>
+        <div style={{marginLeft:10}}>me</div>
         </div>
       </td>
       <td><div className='date'>Mar 5, 2018</div></td>
-      <td>-</td>
-      <td><div className='table-icons'>icons</div></td>
+      <td><div className='space'>
+        -
+        </div>
+        </td>
+      <td><div className='table-icons'>
+        <div className='icons-hidden'>
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+        </div>
+        <div className='iconsnonhidden'>
+          <MoreVertIcon sx={{fontSize:20}}/>
+        </div>
+        </div></td>
     </tr>
-
+    <tr className='myrow'>
+      <td>
+        <div className='firstcol'>
+        <div><FolderIcon sx={{color:'#5f6269'}}/></div>
+        <div style={{marginLeft:20, fontSize:14}}>2018_02_26_mod_fordiagram</div>
+        </div></td>
+      <td>
+        <div className='seccolumn'>
+        <div class="avatar">
+  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar"/>
+</div>
+        <div style={{marginLeft:10}}>me</div>
+        </div>
+      </td>
+      <td><div className='date'>Mar 5, 2018</div></td>
+      <td><div className='space'>
+        -
+        </div>
+        </td>
+      <td><div className='table-icons'>
+        <div className='icons-hidden hidden'>
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+        </div>
+        <div className='iconsnonhidden'>
+          <MoreVertIcon sx={{fontSize:20}}/>
+        </div>
+        </div></td>
+    </tr>
+    
   </tbody>
 </table>
 
