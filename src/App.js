@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from 'react';
 import FolderIcon from '@mui/icons-material/Folder';
 import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
 import FolderDeleteIcon from '@mui/icons-material/FolderDelete';
@@ -13,6 +14,25 @@ import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutli
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 function App() {
+
+
+  useEffect(()=>{
+    const dataCells = document.querySelectorAll('.myrow');
+    // console.log(dataCells)
+    dataCells.forEach((cell) => {
+      cell.addEventListener('mouseover', () => {
+        cell.childNodes[4].childNodes[0].childNodes[0].classList.remove('hidden');
+      });
+    
+      cell.addEventListener('mouseout', () => {
+           cell.childNodes[4].childNodes[0].childNodes[0].classList.add('hidden');
+
+      });
+    });
+  },[])
+
+
+
   return (
     <div className="App">
       <div className='sidenav'>
@@ -142,18 +162,18 @@ function App() {
       </td>
       <td><div className='date'>Mar 5, 2018</div></td>
       <td><div className='space'>
-        -
+        --
         </div>
         </td>
       <td><div className='table-icons'>
-        <div className='icons-hidden'>
-          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
-          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
-          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
-          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+        <div className='icons-hidden hidden'>
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20, cursor:"pointer"}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px', cursor:"pointer"}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
         </div>
         <div className='iconsnonhidden'>
-          <MoreVertIcon sx={{fontSize:20}}/>
+          <MoreVertIcon sx={{fontSize:20, cursor:"pointer"}}/>
         </div>
         </div></td>
     </tr>
@@ -173,7 +193,7 @@ function App() {
       </td>
       <td><div className='date'>Mar 5, 2018</div></td>
       <td><div className='space'>
-        -
+       --
         </div>
         </td>
       <td><div className='table-icons'>
@@ -188,7 +208,192 @@ function App() {
         </div>
         </div></td>
     </tr>
-    
+        <tr className='myrow'>
+      <td>
+        <div className='firstcol'>
+        <div><FolderIcon sx={{color:'#5f6269'}}/></div>
+        <div style={{marginLeft:20, fontSize:14}}>2018_02_26_PS</div>
+        </div></td>
+      <td>
+        <div className='seccolumn'>
+        <div class="avatar">
+  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar"/>
+</div>
+        <div style={{marginLeft:10}}>me</div>
+        </div>
+      </td>
+      <td><div className='date'>Mar 5, 2018</div></td>
+      <td><div className='space'>
+       --
+        </div>
+        </td>
+      <td><div className='table-icons'>
+        <div className='icons-hidden hidden'>
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+        </div>
+        <div className='iconsnonhidden'>
+          <MoreVertIcon sx={{fontSize:20}}/>
+        </div>
+        </div></td>
+    </tr>
+    <tr className='myrow'>
+      <td>
+        <div className='firstcol'>
+        <div><FolderIcon sx={{color:'#5f6269'}}/></div>
+        <div style={{marginLeft:20, fontSize:14}}>all</div>
+        </div></td>
+      <td>
+        <div className='seccolumn'>
+        <div class="avatar">
+  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar"/>
+</div>
+        <div style={{marginLeft:10}}>me</div>
+        </div>
+      </td>
+      <td><div className='date'>Mar 5, 2018</div></td>
+      <td><div className='space'>
+       --
+        </div>
+        </td>
+      <td><div className='table-icons'>
+        <div className='icons-hidden hidden'>
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+        </div>
+        <div className='iconsnonhidden'>
+          <MoreVertIcon sx={{fontSize:20}}/>
+        </div>
+        </div></td>
+    </tr>
+    <tr className='myrow'>
+      <td>
+        <div className='firstcol'>
+        <div><FolderIcon sx={{color:'#5f6269'}}/></div>
+        <div style={{marginLeft:20, fontSize:14}}>basket court</div>
+        </div></td>
+      <td>
+        <div className='seccolumn'>
+        <div class="avatar">
+  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar"/>
+</div>
+        <div style={{marginLeft:10}}>me</div>
+        </div>
+      </td>
+      <td><div className='date'>Mar 5, 2018</div></td>
+      <td><div className='space'>
+       --
+        </div>
+        </td>
+      <td><div className='table-icons'>
+        <div className='icons-hidden hidden'>
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+        </div>
+        <div className='iconsnonhidden'>
+          <MoreVertIcon sx={{fontSize:20}}/>
+        </div>
+        </div></td>
+    </tr>
+        <tr className='myrow'>
+      <td>
+        <div className='firstcol'>
+        <div><FolderIcon sx={{color:'#5f6269'}}/></div>
+        <div style={{marginLeft:20, fontSize:14}}>fonts new</div>
+        </div></td>
+      <td>
+        <div className='seccolumn'>
+        <div class="avatar">
+  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar"/>
+</div>
+        <div style={{marginLeft:10}}>me</div>
+        </div>
+      </td>
+      <td><div className='date'>Mar 5, 2018</div></td>
+      <td><div className='space'>
+       --
+        </div>
+        </td>
+      <td><div className='table-icons'>
+        <div className='icons-hidden hidden'>
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+        </div>
+        <div className='iconsnonhidden'>
+          <MoreVertIcon sx={{fontSize:20}}/>
+        </div>
+        </div></td>
+    </tr>
+    <tr className='myrow'>
+      <td>
+        <div className='firstcol'>
+        <div><FolderIcon sx={{color:'#5f6269'}}/></div>
+        <div style={{marginLeft:20, fontSize:14}}>Indonesie 2015</div>
+        </div></td>
+      <td>
+        <div className='seccolumn'>
+        <div class="avatar">
+  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar"/>
+</div>
+        <div style={{marginLeft:10}}>me</div>
+        </div>
+      </td>
+      <td><div className='date'>Mar 5, 2018</div></td>
+      <td><div className='space'>
+       --
+        </div>
+        </td>
+      <td><div className='table-icons'>
+        <div className='icons-hidden hidden'>
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+        </div>
+        <div className='iconsnonhidden'>
+          <MoreVertIcon sx={{fontSize:20}}/>
+        </div>
+        </div></td>
+    </tr>
+    <tr className='myrow'>
+      <td>
+        <div className='firstcol'>
+        <div><FolderIcon sx={{color:'#5f6269'}}/></div>
+        <div style={{marginLeft:20, fontSize:14}}>old</div>
+        </div></td>
+      <td>
+        <div className='seccolumn'>
+        <div class="avatar">
+  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar"/>
+</div>
+        <div style={{marginLeft:10}}>me</div>
+        </div>
+      </td>
+      <td><div className='date'>Mar 5, 2018</div></td>
+      <td><div className='space'>
+       --
+        </div>
+        </td>
+      <td><div className='table-icons'>
+        <div className='icons-hidden hidden'>
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+        </div>
+        <div className='iconsnonhidden'>
+          <MoreVertIcon sx={{fontSize:20}}/>
+        </div>
+        </div></td>
+    </tr>
   </tbody>
 </table>
 
