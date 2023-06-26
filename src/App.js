@@ -198,13 +198,13 @@ function App() {
         </td>
       <td><div className='table-icons'>
         <div className='icons-hidden hidden'>
-          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
-          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
-          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
-          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20, cursor:"pointer"}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px', cursor:"pointer"}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
         </div>
         <div className='iconsnonhidden'>
-          <MoreVertIcon sx={{fontSize:20}}/>
+          <MoreVertIcon sx={{fontSize:20, cursor:"pointer"}}/>
         </div>
         </div></td>
     </tr>
@@ -229,13 +229,13 @@ function App() {
         </td>
       <td><div className='table-icons'>
         <div className='icons-hidden hidden'>
-          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
-          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
-          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
-          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20,cursor:"pointer", cursor:"pointer"}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px',cursor:"pointer"}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px',cursor:"pointer"}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px',cursor:"pointer"}} />
         </div>
         <div className='iconsnonhidden'>
-          <MoreVertIcon sx={{fontSize:20}}/>
+          <MoreVertIcon sx={{fontSize:20,cursor:"pointer"}}/>
         </div>
         </div></td>
     </tr>
@@ -260,13 +260,13 @@ function App() {
         </td>
       <td><div className='table-icons'>
         <div className='icons-hidden hidden'>
-          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
-          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
-          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
-          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20,cursor:"pointer"}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px',cursor:"pointer"}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px',cursor:"pointer"}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px',cursor:"pointer"}} />
         </div>
         <div className='iconsnonhidden'>
-          <MoreVertIcon sx={{fontSize:20}}/>
+          <MoreVertIcon sx={{fontSize:20,cursor:"pointer"}}/>
         </div>
         </div></td>
     </tr>
@@ -274,7 +274,7 @@ function App() {
       <td>
         <div className='firstcol'>
         <div><FolderIcon sx={{color:'#5f6269'}}/></div>
-        <div style={{marginLeft:20, fontSize:14}}>basket court</div>
+        <div style={{marginLeft:20,cursor:"pointer", fontSize:14}}>basket court</div>
         </div></td>
       <td>
         <div className='seccolumn'>
@@ -291,10 +291,10 @@ function App() {
         </td>
       <td><div className='table-icons'>
         <div className='icons-hidden hidden'>
-          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
-          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
-          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
-          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <PersonAddIcon sx={{color:"#5f6269", cursor:"pointer", fontSize:20}} />
+          <FileDownloadIcon sx={{color:"#5f6269",cursor:"pointer", fontSize:20 , marginLeft:'20px'}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",cursor:"pointer", fontSize:20, marginLeft:'20px'}}/>
+          <StarBorderIcon sx={{color:"#5f6269",cursor:"pointer", fontSize:20 , marginLeft:'20px'}} />
         </div>
         <div className='iconsnonhidden'>
           <MoreVertIcon sx={{fontSize:20}}/>
@@ -304,7 +304,7 @@ function App() {
         <tr className='myrow'>
       <td>
         <div className='firstcol'>
-        <div><FolderIcon sx={{color:'#5f6269'}}/></div>
+        <div><FolderIcon sx={{color:'#5f6269',cursor:"pointer" }}/></div>
         <div style={{marginLeft:20, fontSize:14}}>fonts new</div>
         </div></td>
       <td>
@@ -322,13 +322,13 @@ function App() {
         </td>
       <td><div className='table-icons'>
         <div className='icons-hidden hidden'>
-          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
-          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
-          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
-          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20, cursor:"pointer"}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px', cursor:"pointer"}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
         </div>
         <div className='iconsnonhidden'>
-          <MoreVertIcon sx={{fontSize:20}}/>
+          <MoreVertIcon sx={{fontSize:20, cursor:"pointer"}}/>
         </div>
         </div></td>
     </tr>
@@ -353,13 +353,13 @@ function App() {
         </td>
       <td><div className='table-icons'>
         <div className='icons-hidden hidden'>
-          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
-          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
-          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
-          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20, cursor:"pointer"}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px', cursor:"pointer"}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
         </div>
         <div className='iconsnonhidden'>
-          <MoreVertIcon sx={{fontSize:20}}/>
+          <MoreVertIcon sx={{fontSize:20, cursor:"pointer"}}/>
         </div>
         </div></td>
     </tr>
@@ -384,13 +384,13 @@ function App() {
         </td>
       <td><div className='table-icons'>
         <div className='icons-hidden hidden'>
-          <PersonAddIcon sx={{color:"#5f6269", fontSize:20}} />
-          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
-          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px'}}/>
-          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px'}} />
+          <PersonAddIcon sx={{color:"#5f6269", fontSize:20, cursor:"pointer"}} />
+          <FileDownloadIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
+          <DriveFileRenameOutlineIcon sx={{color:"#5f6269",fontSize:20, marginLeft:'20px', cursor:"pointer"}}/>
+          <StarBorderIcon sx={{color:"#5f6269",fontSize:20 , marginLeft:'20px', cursor:"pointer"}} />
         </div>
         <div className='iconsnonhidden'>
-          <MoreVertIcon sx={{fontSize:20}}/>
+          <MoreVertIcon sx={{fontSize:20, cursor:"pointer"}}/>
         </div>
         </div></td>
     </tr>
