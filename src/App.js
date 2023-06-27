@@ -137,9 +137,9 @@ function App() {
       <div className='main'>
         <div className='tablebg'>
 
-        <table class="my-table">
-  <thead>
-    {/* <tr>
+  <table class="my-table">
+            <thead>
+      {/* <tr>
       <th>Header 1</th>
       <th>Header 2</th>
       <th>Header 3</th>
@@ -346,8 +346,8 @@ function App() {
         <div style={{marginLeft:10}}>me</div>
         </div>
       </td>
-      <td><div className='date'>Mar 5, 2018</div></td>
-      <td><div className='space'>
+            <td><div className='date'>Mar 5, 2018</div></td>
+            <td><div className='space'>
        --
         </div>
         </td>
